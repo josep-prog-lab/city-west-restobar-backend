@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { DashboardSidebar } from '@/components/ui/dashboard-sidebar';
 import { DashboardHeader } from '@/components/ui/dashboard-header';
@@ -10,7 +9,7 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Textarea } from '@/components/ui/textarea';
-import { BookingPlus, Filter, Search, X } from 'lucide-react';
+import { BookPlus, Filter, Search, X } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import { getAllBookings, createBooking, updateBooking, deleteBooking, Booking } from '@/models/Booking';
 import { getAllTables, Table as TableType } from '@/models/Table';
@@ -126,7 +125,7 @@ const BookingsPage = () => {
               <Dialog open={showDialog} onOpenChange={setShowDialog}>
                 <DialogTrigger asChild>
                   <Button className="flex items-center gap-2 bg-restaurant-primary hover:bg-restaurant-primary/90">
-                    <BookingPlus size={16} />
+                    <BookPlus size={16} />
                     <span>New Booking</span>
                   </Button>
                 </DialogTrigger>
